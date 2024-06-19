@@ -83,7 +83,7 @@ select {
   min-height: 18px;
 }
 
-/*hide the original checkbox and radio button*/
+/* hide the original checkbox and radio button */
 [type="checkbox"],
 [type="radio"] {
   opacity: 0;
@@ -142,12 +142,14 @@ select {
   transition: stroke-dashoffset 0.4s;
 }
 
-/* change the color of custom checkbox when the original checkbox is in checked state */
+/* change the color of custom checkbox 
+when the original checkbox is in checked state */
 [type="checkbox"]:checked + label::before {
   background-color: #191516;
 }
 
-/* setting stroke-dashoffset to 0 will reveal the hidden checkmark */
+/* setting stroke-dashoffset to 0 
+will reveal the hidden checkmark */
 [type="checkbox"]:checked + label svg polyline {
   stroke-dashoffset: 0;
 }
@@ -230,6 +232,7 @@ textarea {
   }
 }
 
+/* for tablet devices  */
 @media (max-width: 460px) {
   main {
     max-width: 280px;
@@ -256,6 +259,7 @@ textarea {
   }
 }
 
+/* for mobile phone */
 @media (max-width: 375px) {
   main {
     max-width: 260px;
